@@ -5,7 +5,7 @@ The `cpCloudFrontPlugin` is a symfony plugin that provides a helper to include i
 ## Installation
   * Install the plugin (via a package)
 
-        symfony plugin:install sfDoctrineGuardPlugin
+        symfony plugin:install sfCloudFrontPlugin
   
   * Install the plugin (via a Subversion checkout)
   
