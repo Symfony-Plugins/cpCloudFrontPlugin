@@ -3,14 +3,13 @@
 The `cpCloudFrontPlugin` is a symfony plugin that provides a helper to include into your pages images that are stored on AWS's CloudFront service. 
 
 ## Installation
+  * Install the plugin (via a package)
 
+        symfony plugin:install sfDoctrineGuardPlugin
+  
   * Install the plugin (via a Subversion checkout)
   
         svn co http//svn.symfony-project.com/plugins/cpCloudFrontPlugin/trunk plugins/cpCloudFrontPlugin
-
-  * Install the plugin via a Subversoin svn:externals property
-
-       svn propset svn:externals 'cpCloudFrontPlugin http//svn.symfony-project.com/plugins/cpCloudFrontPlugin/trunk" plugins
 
   * Activate the plugin in the `config/ProjectConfiguration.class.php`
   
@@ -19,10 +18,10 @@ The `cpCloudFrontPlugin` is a symfony plugin that provides a helper to include i
         {
           public function setup()
           {
-            $this-&gt;enablePlugins(array(
-              &#039;...&#039;, 
-              &#039;cpCloudFrontPlugin&#039;,
-              &#039;...&#039;
+            $this->enablePlugins(array(
+              ... 
+              'cpCloudFrontPlugin',
+              ...
             ));
           }
         }
@@ -46,4 +45,4 @@ The plugin provides 2 helper methods:
  * `cloudfront_submit_image_tag` is a replacement for the `submit_image_tag` helper method. It accepts the same parameters.
 
         [php]
-        echo cludfront_submit_image_tag($source, $options); 
+        echo cloudfront_submit_image_tag($source, $options); 
