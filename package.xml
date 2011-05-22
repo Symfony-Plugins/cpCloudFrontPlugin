@@ -16,7 +16,7 @@
 	<date>2011-05-23</date>
 	<time>01:12:00</time>
 	<version>
-		<release>0.1.5</release>
+		<release>0.1.6</release>
 		<api>0.1.0</api>
 	</version>
 	<stability>
@@ -57,7 +57,7 @@
 	<changelog>
 		<release>
 			<version>
-				<release>0.1.5</release>
+				<release>0.1.6</release>
 				<api>0.1.0</api>
 			</version>
 			<stability>
