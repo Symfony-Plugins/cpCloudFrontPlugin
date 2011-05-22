@@ -7,7 +7,7 @@ function _cloudfront_base_url() {
 }
 
 function cloudfront_image_tag($source, $options = array()) {
-  $enabled = true; //sfConfig::get('app_cloudfront_enable', false);
+  $enabled = sfConfig::get('app_cloudfront_enable', false);
   $src = ($enabled ? _cloudfront_base_url() : '') . $source;
   return image_tag($src, $options);
 }
